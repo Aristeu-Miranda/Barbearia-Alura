@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+.itens {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.itens a {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.itens a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0px auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+.title-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+} 
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.conteudo-mapa {
+    width: 940px;
+    margin: 0px auto;
+}
+
+.mapa p {
+    padding: 0 0 2em 0;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background-color: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.config-itens {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.itens-beneficios {
+    display: block;
+    line-height: 1.5;
+}
+
+.itens-beneficios:first-child {
+    font-weight: bold;
+}
+
+.itens-beneficios::before {
+    content: " ★";
+}
+
+.barba {
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+footer {
+    background-image: url(./imagens/bg.jpg);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copy {
+    font-size: 13px;
+    color: #FFF;
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-mapa, .conteudo-beneficios, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .itens-beneficios, .barba {
+        width: 100%;
+    }
+}
